@@ -1,0 +1,12 @@
+{
+  "name": "wp-header-update",
+  "version": "1.0.0",
+  "description": "Easily update plugin and theme header values.",
+  "main": "index.js",
+  "repository": "https://github.com/timelsass/wp-header-update",
+  "author": "Tim <dev@tim.ph>",
+  "license": "MIT",
+  "dependencies": {
+    "wp-header-search": "^1.0.0"
+  }
+}
