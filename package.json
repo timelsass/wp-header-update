@@ -7,6 +7,7 @@
   "author": "Tim <dev@tim.ph>",
   "license": "MIT",
   "dependencies": {
-    "wp-header-search": "^1.0.0"
+    "wp-header-search": "^1.0.0",
+    "wp-project-header": "^1.0.1"
   }
 }
