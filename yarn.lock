@@ -48,14 +48,7 @@ pkg-dir@^3.0.0:
   dependencies:
     find-up "^3.0.0"
 
-wp-header-search@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/wp-header-search/-/wp-header-search-1.0.0.tgz#e08eab944bd14acad590a7957137d114e79725a0"
-  integrity sha512-JpgFMbAiklAAqDQSQBw0oKDJ/pJtRwg4r3fypIu6yFEy7aukSxT5fOxnximwgfq48cTIHciuVYOaq43qXwpdmA==
-  dependencies:
-    wp-project-header "^1.0.0"
-
-wp-project-header@^1.0.0, wp-project-header@^1.0.1:
+wp-project-header@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/wp-project-header/-/wp-project-header-1.0.1.tgz#d265a22caa6239a3477ec91eebea0880ffc4e62e"
   integrity sha512-6vT9LHJ4anYlSVnOJobsci0ujiYvlKgG0StKtUjwd6ibFE0/HVSDdNvuIXso5obGaz3W5gBktF0wKiDW5GoPhw==

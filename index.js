@@ -1,6 +1,6 @@
 const fs = require( 'fs' ).promises,
-	projectHeader = require( 'wp-project-header' ),
-	headerSearch = require( 'wp-header-search' );
+	projectHeader = require( 'wp-project-header' );
+
 
 /**
  * Update Theme/Plugin Header by key.
@@ -11,8 +11,9 @@ const fs = require( 'fs' ).promises,
  */
 module.exports = async ( key = 'Version', newValue = '1.0.0', file ) => {
 	file = file || await projectHeader( file );
-	let oldValue = await headerSearch( key, file );
-	let content = await fs.readFile( file, 'utf8' );
-	content = content.replace( oldValue, newValue );
+	let content = await fs.readFile( file, 'utf8' ),
+		regex = new RegExp( `^([ \t\/*#@]*${ key }*?:[\t ]*)(.*)$`, 'mi' );
+
+	content = content.replace( regex, `$1${ newValue }` );
 	await fs.writeFile( file, content, 'utf8' );
 }
